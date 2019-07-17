@@ -1,0 +1,166 @@
+{
+  "cards" : [
+    {
+      "big" : false,
+      "card_title": "BOL.COM",
+      "card_name" : "A summer island in the Netherlands",
+      "card_img": "bolcom.png"
+    },
+    {
+      "big" : false,
+      "card_title": "KEMPEN",
+      "card_name" : "Not some average banking website",
+      "card_img": "kempen.png"
+    },
+    {
+      "big" : false,
+      "card_title": "PHILIPS",
+      "card_name" : "Beautifull design meets inovative technology",
+      "card_img": "philips.png"
+    },
+    {
+      "big" : false,
+      "card_title": "Gemeentemuseum",
+      "card_name" : "A 100 years of Mondriaan & The Stijl",
+      "card_img": "gemeentemuseum.png"
+    },
+    {
+      "big" : true,
+      "card_title": "FLORENSIS",
+      "card_name" : "Rethinking the entire online ecosystem",
+      "card_img": "florensis.png",
+      "sub_cards": [
+        {
+          "title": "MICROSOFT",
+          "desc" : "Tapping into Ireland’s unique gaming culture and bringing a fresh flavour to their Xbox social media channels"
+        },
+        {
+          "title": "O’NEILL",
+          "desc" : "Integrating existing content into O’Neill’s new e-commerce platform"
+        }
+      ]
+    },
+    {
+      "big" : false,
+      "card_title": "BE LIGHTNING",
+      "card_name" : "Delivering clarity on a global scale",
+      "card_img": "lightning.png"
+    },
+    {
+      "big" : false,
+      "card_title": "TUI",
+      "card_name" : "Swipe to find your next holiday destination",
+      "card_img": "tui.png"
+    },
+    {
+      "big" : false,
+      "slogan": true,
+      "card_title": "“Dept helped us tell our story through a bold new identity and a robust online experience. To the tune of 60% growth in online bookings in just one month.”",
+      "card_name" : "MATTIJS TEN BRINK – CEO, TRANSAVIA"
+    },
+    {
+      "big" : false,
+      "card_title": "CHOCOMEL",
+      "card_name" : "A campaign for limited edition letter packs",
+      "card_img": "chocomel.png"
+    },
+    {
+      "big" : false,
+      "card_title": "JBL",
+      "card_name" : "Live like a champion with Jerome Booteng",
+      "card_img": "jbl.png"
+    },
+    {
+      "big" : true,
+      "card_title": "KONINKLIJKE BIBLIOTHEEK",
+      "card_name" : "The search for the most influential book ever",
+      "card_img": "koninklijke-bibliotheek.png",
+      "sub_cards": [
+        {
+          "title": "BUTLINS",
+          "desc" : "Enhancing customer experience for personalised holiday planning using real time data"
+        },
+        {
+          "title": "VACANSESELECT",
+          "desc" : "Predicting booking behavior for holidays with smart data, voice search and machine learning"
+        }
+      ]
+    },
+    {
+      "big" : false,
+      "card_title": "LIBERTY GLOBAL",
+      "card_name" : "Delivering complex commerce solutions",
+      "card_img": "liberty-global.png"
+    },
+    {
+      "big" : false,
+      "card_title": "ARLA",
+      "card_name" : "Swipe to find your next holiday destination",
+      "card_img": "arla.png"
+    }
+
+  ] ,
+  "logos" : [
+    {
+      "brand" : "abn",
+      "img" : "ABN_logo_zwart.png"
+    },
+    {
+      "brand" : "adidas",
+      "img" : "Adidas_logo_zwart.png"
+    },
+    {
+      "brand" : "klm",
+      "img" : "KLM_logo_zwart.png"
+    },
+    {
+      "brand" : "microsoft",
+      "img" : "Microsoft_logo_zwart.png"
+    },
+    {
+      "brand" : "mona",
+      "img" : "Mona_logo_zwart.png"
+    },
+    {
+      "brand" : "nivea",
+      "img" : "Nivea_logo_zwart.png"
+    },
+    {
+      "brand" : "nn",
+      "img" : "NN_logo_zwart.png"
+    },
+    {
+      "brand" : "oxxio",
+      "img" : "Oxxio_logo_zwart.png"
+    },
+    {
+      "brand" : "pathe",
+      "img" : "Pathe_logo_zwart.png"
+    },
+    {
+      "brand" : "tomtom",
+      "img" : "Tomtom_logo_zwart.png"
+    },
+    {
+      "brand" : "transavia",
+      "img" : "Transavia_logo_zwart.png"
+    },
+    {
+      "brand" : "triumph",
+      "img" : "Triumph_logo_zwart.png"
+    },
+    {
+      "brand" : "unilever",
+      "img" : "Unilever_logo_zwart.png"
+    },
+    {
+      "brand" : "walibi",
+      "img" : "Walibi_logo_zwart.png"
+    },
+    {
+      "brand" : "zalando",
+      "img" : "Zalando_logo_zwart.png"
+    }
+  ]
+  
+}

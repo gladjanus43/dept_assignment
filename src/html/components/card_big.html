@@ -1,0 +1,22 @@
+<div class="card__grid">
+    <img src="images/{{card.card_img}}">
+    <div class="card__text">
+        <h5>{{card.card_title}}</h3>
+        <h4>{{card.card_name}}</h2>
+        <a href=""> ▶ VIEW CASE</a>
+    </div>
+
+    <div class="cards__small">
+    {% for subcard in card.sub_cards %}
+        <div class="card__small">
+            <h5>{{subcard.title}}</h5>
+            <p>
+            {{subcard.desc}}
+            </p>
+            <a href="">▶ VIEW CASE</a>
+        </div>
+    {% endfor %}
+        
+    </div>
+    
+</div>

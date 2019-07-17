@@ -1,0 +1,194 @@
+@import "../base/typography";
+
+// html{
+//     scroll-behavior: smooth;
+// }
+
+.footer--fullWidth {
+  width: 100%;
+  background-color: black;
+}
+
+.footer--white {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  background-color: $footer-gray;
+
+  .footer__logo {
+    display: none;
+  }
+
+  .footer__left {
+    padding: 80px 40px 80px 40px;
+
+    .footer__leftTop {
+      display: flex;
+      justify-content: space-between;
+      // margin-left: 40px;
+      // padding-top: 40px;
+      // padding-bottom: 20px;
+
+      .footer__links,
+      .footer__social {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .footer__links {
+        font-family: "Teko Regular";
+        font-size: 2em;
+        line-height: 1em;
+
+        a {
+          color: white;
+          padding-bottom: 10px;
+        }
+      }
+
+      .footer__social {
+        // margin-right: 40px;
+
+        a {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .devider {
+      border: 1px solid $dark-gray;
+      width: 100%;
+    }
+
+    .footer__leftBottom {
+      margin-top: 20px;
+      .footer__bottomItems {
+        color: $gray;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .footer__dept {
+        color: $gray;
+        display: block;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .footer__right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: auto;
+
+    .footer__left {
+      width: 100%;
+
+      .footer__leftTop {
+        margin-bottom: 60px;
+        .footer__menu {
+          .footer__links {
+            display: block;
+            a {
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .footer__social {
+          display: block;
+          a {
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .footer__leftBottom {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+        margin-top: 60px;
+        .footer__bottomItems {
+          display: block;
+          span {
+            margin-right: 10px;
+          }
+        }
+
+        .footer__dept {
+          margin: 0;
+        }
+      }
+    }
+
+    .footer__right {
+      display: flex;
+      background-color: white;
+      width: 125px;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      img{
+          width: 25%;
+          height: 40%;
+      }
+
+      span {
+        text-align: center;
+        font-family: "Teko Regular";
+        color: $blue;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    width: 1180px;
+    // border: 1px solid red;
+    // margin-left: calc((100% - 1200px) / 2);
+    .footer__left {
+      padding: 80px 40px 80px 0;
+    }
+    .footer__logo {
+      display: block;
+      position: absolute;
+    }
+
+    .footer__links,
+    .footer__leftBottom {
+      margin-left: 150px;
+    }
+  }
+
+  .footer--fullWidth{
+      position: relative;
+
+      .footer--white {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        width: calc((100vw - 1180px) / 2);
+        height: 100%;
+      }
+  }
+
+  
+}

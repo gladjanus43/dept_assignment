@@ -1,0 +1,142 @@
+@import "base/typography";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a, a:hover, a:active, a:visited{
+    text-decoration: none;
+    // color: black;s
+}
+
+.border--top{
+    border-top: 1px solid $light-gray;
+}
+
+.border--bottom{
+    border-bottom: 1px solid $light-gray;
+}
+
+.clear--border{
+    border-bottom: none !important;
+}
+
+h1{
+    font-family: 'Teko Regular';
+    font-size: 5em;
+    line-height: 1;
+}
+
+h2{
+    font-family: 'Teko Regular';
+    font-size: 3em;
+    line-height: 1;
+}
+
+h3{
+    font-family: 'Teko Regular';
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 100;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em; 
+}
+
+h5{
+    color: $gray;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+//margins
+.margin-fw{
+    width: calc(100% - 40px);
+    margin: 0 20px 0 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+//buttons
+.btn{
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;  
+    margin: auto;
+    margin: 20px;
+}
+
+.btn--black{
+    background-color: black;
+    color: white;
+}
+
+.btn--blue{
+    background-color: $blue;
+    color: white;
+}
+
+//filters
+.filter__item{
+    font-family: 'Teko Regular';
+    font-size: 1.4em;
+    color: #D8D8D8;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filter--underline{
+    color: black;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+//flexboxes
+.vert-align{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.vert-align-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .filters{
+        width: 80%;
+        margin: 20px auto 20px auto;
+        display: flex;
+        justify-content: flex-end;
+        // border: 1px solid red;
+        
+        .filter__item{
+            width: auto;
+            // border: 1px solid red;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .filters{
+        width: 1200px;
+    }
+}

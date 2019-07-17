@@ -1,0 +1,94 @@
+{% extends 'layouts/application.html' %}
+
+{%block head %}
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="stylesheets/components/card.css">
+  <link rel="stylesheet" href="stylesheets/components/navbar.css">
+  <link rel="stylesheet" href="stylesheets/components/footer.css">
+  <link rel="stylesheet" href="stylesheets/components/card_big.css">
+  {%endblock%}
+
+  {% block nav %}
+    {% include 'components/navbar.html' %}
+  {% endblock %}
+
+  {%block header%}
+    <header id="pageTop">
+      <h1>WORK</h1>
+      <img class="header__img" src="images/florensis.png">
+      <div id="header__button" class="btn btn--black">VIEW CASE</div>
+    </header>
+
+    {%endblock%}
+
+    {% block content %}
+
+      <div class="filters">
+        <span class="filter__item">Show me <span class="filter--underline">all work ▼</span></span>
+        <span class="filter__item">In <span class="filter--underline">all industries ▼</span></span>
+      </div>
+
+      <div class="card__container">
+        {% for card in cards %}
+          {% if card.big %}
+            {% include "components/card_big.html" %}
+            {% elif card.slogan %}
+              <div class="card__slogan">
+                <p>{{card.card_title}}</p>
+                <h5>{{card.card_name}}</h5>
+              </div>
+          {% else %}
+            {% include "components/card.html" %}    
+          {% endif %}
+        {% endfor %}
+
+        
+      </div>
+
+      <div class="clients">
+        <h2>Clients</h2>
+        <p>
+          We value a great working relationship with our clients above all else. It’s why they often come to our parties. It’s also why we’re able to challenge and inspire them to reach for the stars.
+        </p>
+        <div class="clients__img">
+          {% for logo in logos %}
+            <div class="img__container">
+              <img src="images/logos/{{logo.img}}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="form margin-fw">
+        <div class="form__header">QUESTIONS? WE ARE HERE TO HELP!</div>
+        <form class="form__grid">
+
+            <div id="form--name">
+              <label>
+                <strong>NAME</strong>
+              </label>
+              <input type="text">
+            </div>
+
+            <div id="form--email">
+              <label>
+                <strong>EMAIL</strong>
+              </label>
+              <input type="text">
+            </div>
+
+            <div id="form--message">
+              <label>
+                <strong>MESSAGE</strong>
+              </label>
+              <textarea rows="4" name="message"></textarea>
+            </div>
+
+          <input type="submit" class="btn--form" value="SEND" id="form--button">
+      </form>
+    </div>
+  {% endblock %}
+
+  {% block footer %}
+    {% include "components/footer.html" %}
+  {% endblock %}

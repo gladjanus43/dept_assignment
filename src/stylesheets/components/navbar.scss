@@ -1,0 +1,218 @@
+@import "../base/typography";
+
+#menu{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    background-color: black;
+    top: 0;
+    left: -100vw;
+    transition: .2s;
+    
+    .menu__countries, .menu__social, .menu--gradient{
+        display: none;
+    }
+    
+
+    .menu__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px 0 40px;
+        height: 80px;
+        // border: 1px solid red;
+
+        span{
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .menu__bottom{
+        // margin: auto;
+        // overflow-y: scroll;
+
+        .menu--active{
+            font-size: .7em;
+            padding-right: 10px;
+        }
+
+        ul{
+            list-style: none;
+            text-align: right;
+            margin: 0 40px 0 40px;
+            font-family: 'Teko Regular';
+            
+            li{
+                color: white;
+                border-bottom: 1px solid white;
+                padding-top: 4px;
+
+                a{
+                    color: white;
+                    font-size: 2.4em;
+                    transition: .2s;
+                    line-height: 1em;
+                }
+
+                a:hover{
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+
+
+nav{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    transition: 0.5s;
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: none;
+    background-color: white;
+    transition: 0.5s;
+}
+
+    img{
+        height: 15px;
+        width: auto; 
+        transition: 0.5s;
+    }
+
+    .nav__text{
+        font-family: 'Teko Regular';
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}
+
+.nav__item{
+    padding: 0 20px 0 20px;
+}
+
+
+
+@media only screen and (min-width: 900px){
+    nav{
+        width: calc(100% - 80px);
+        margin: 0 40px 0 40px;
+        position: absolute;
+        height: 70px;
+        top: 20px;
+        z-index: 2;
+
+        .nav__container{
+            border-bottom: 1px solid $gray;
+            background-color: transparent;
+
+            img{
+                height: 20px;
+            }
+        }
+    }
+
+    #menu{
+        border: 20px solid white;
+
+        .menu__countries, .menu__social,.menu--gradient{
+            display: block;
+            position: absolute;
+        }
+
+        .menu__countries{
+            top: 120px;
+            left: 40px;
+        }
+
+        .menu__social{
+            bottom: 20px;
+            left: 40px;
+            width: 75px;
+        }
+
+        .menu--gradient{
+            width: calc(100vw - 40px - 80px - 75px);
+            height: 75px;
+            z-index: 6;
+            right: 40px;
+            bottom: 0;
+            background: rgba(255,255,255,0);
+            background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1)));
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+        }
+
+        .menu__countries, .menu__social{
+            // background-color: black;
+            padding: 0 5px 5px 0; 
+            ul{
+                list-style: none;
+                background-color: black;
+                li{
+                    color: white;
+                    font-size: 0.7em;
+                    
+                    margin-bottom: 3px;
+                    
+                    a{
+                        
+                        color: white;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .menu__bottom{
+            overflow: auto;
+            height: calc(100vh - 200px);
+            margin-top: 60px;
+            
+            ul{
+                li{
+                    padding-top: 10px;
+                    a{
+                        font-size: 5.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    nav{
+        margin: 0;
+        left: calc((100% - 1160px) / 2);
+        width: 1160px;
+    }   
+
+    .menu__container{
+        position: relative;
+        width: 1180px;
+        margin: auto;
+    }
+
+    #menu{
+        margin: 0;
+        padding: 0;
+        .menu--gradient{
+            width: 1025px;
+        }
+    }
+}
+

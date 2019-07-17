@@ -1,0 +1,102 @@
+@import "../base/typography";
+
+.card__container{
+    margin-top: 20px;
+    transition: .5s;
+
+
+    .card{
+        width: calc(100% - 40px);
+        margin: 0 20px 40px 20px;
+        transition:  .5s;
+
+        .card__img{
+            width: 100%;
+            transition: .5s;
+        }
+
+        h4{
+            margin-top: 15px;
+            transition: .5s;
+        }
+
+        h5{
+            margin-top: 15px;
+            transition: .5s;
+        }
+
+        a{
+            display: none;
+        }
+    } 
+
+    .card__slogan{
+        border-top: 1px solid $light-gray; 
+        margin: 20px;
+
+        p{
+            padding: 40px 0 40px 0;
+            font-family: 'Teko Regular';
+            font-size: 1.5em;
+        }
+
+        h5{
+            color: black;
+            padding-bottom: 40px;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    .card__container{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card{
+            width: calc(50% - 10px);
+            margin: 0 0 40px 0;
+
+            h4{
+                font-family: 'Teko Regular';
+                font-size: 1.7em;
+                // margin-bottom: 40px;
+            }
+
+            a{
+                display: inline-block;
+                color: $blue;
+                font-weight: 1000;
+                font-size: .8em;
+                margin-top: 15px;
+            }
+        }
+
+        .card__slogan{
+            width: 100%;
+            margin: 0;
+
+            p{
+                font-size: 2em;
+                width: 60%;
+                margin: auto;
+            }
+            h5{
+                width: 60%;
+                margin: auto;
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width: 1200px){
+    .card__container{
+        width: 1180px;
+        margin: auto;
+    }
+    
+}

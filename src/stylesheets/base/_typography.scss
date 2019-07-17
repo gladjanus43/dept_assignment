@@ -1,0 +1,25 @@
+//colors
+$gray: #939393;
+$light-gray: #DDDDDD;
+$dark-gray: #3E3E3E;
+$blue: #1A18F7;
+$footer-gray: #0E0E0E;
+
+@font-face{
+  font-family: 'Teko Regular';
+  src: url('/fonts/teko-light.ttf');
+  font-weight: normal;
+  font-style: normal;
+  line-height: 0.1em;
+}
+
+@font-face{
+  font-family: 'Teko Bold';
+  src: url('/fonts/teko-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+}
